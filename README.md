@@ -24,7 +24,7 @@ There are two ways to run cypress in the terminal :
 | cy.request | To make HTTP requests directly from within the test |
 
 **Folder Structure in a Cypress Project**  
-cypress/  
+|  cypress/  |  
 |-- fixtures/  
 |   |-- example.json  
 |-- e2e/  
