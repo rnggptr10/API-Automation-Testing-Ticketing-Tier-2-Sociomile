@@ -22,3 +22,17 @@ There are two ways to run cypress in the terminal :
 | it | To define one single test |
 | expect | To make assertions about certain results during testing |
 | cy.request | To make HTTP requests directly from within the test |
+
+**Folder Structure in a Cypress Project**
+cypress/
+|-- fixtures/
+|   |-- example.json
+|-- integration/
+|   |-- test_spec.js
+|-- plugins/
+|   |-- index.js
+|-- support/
+|   |-- commands.js
+|   |-- index.js
+|-- cypress.json
+|-- package.json
