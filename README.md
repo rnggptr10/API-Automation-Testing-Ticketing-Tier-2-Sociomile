@@ -1,7 +1,8 @@
 # API-Automation-Testing-Ticketing-Tier-2-Sociomile
 
 **General Description**  
-API Testing Ticketing Tier 2 testing script on Sociomile with Cypress which uses the JavaScript programming language.
+API Testing Ticketing Tier 2 testing script on Sociomile with [Cypress](https://www.cypress.io/)
+ which uses the JavaScript programming language.
     
 **How to Run**  
 There are two ways to run cypress in the terminal : 
