@@ -33,15 +33,15 @@ cypress/
 |-- support/  
 |   |-- commands.js  
 |   |-- index.js  
-|-- cypress.json  
+|-- cypress.config.js  
 |-- package.json  
 ```
 
 | Name Folder/File | Detail |
 | ------- | ------- |
-| fixture | To group a series of tests |
-| e2e | To define one single test |
-| support | To make assertions about certain results during testing |
-| cypress.json | To make HTTP requests directly from within the test |
-| package.json | To make HTTP requests directly from within the test |
+| fixture | To store static or fixture data that may be used in testing |
+| e2e | To save test specification files |
+| support | To store files containing custom commands or configurations that will be imported by each test. |
+| cypress.config.js | The main configuration file for a Cypress project |
+| package.json | Configuration files for project dependency management |
 
