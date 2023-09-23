@@ -24,7 +24,8 @@ There are two ways to run cypress in the terminal :
 | cy.request | To make HTTP requests directly from within the test |
 
 **Folder Structure in a Cypress Project**  
-```cypress/  
+```
+cypress/  
 |-- fixtures/  
 |   |-- example.json  
 |-- e2e/  
@@ -33,4 +34,14 @@ There are two ways to run cypress in the terminal :
 |   |-- commands.js  
 |   |-- index.js  
 |-- cypress.json  
-|-- package.json  ```
+|-- package.json  
+```
+
+| Name Folder/File | Detail |
+| ------- | ------- |
+| fixture | To group a series of tests |
+| e2e | To define one single test |
+| support | To make assertions about certain results during testing |
+| cypress.json | To make HTTP requests directly from within the test |
+| package.json | To make HTTP requests directly from within the test |
+
