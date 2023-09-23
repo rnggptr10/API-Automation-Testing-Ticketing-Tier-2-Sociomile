@@ -10,7 +10,7 @@ There are two ways to run cypress in the terminal :
    - When you run this command, Cypress will open a GUI window that allows you to run and manage tests interactively.
 2. npx cypress run
    - This is the command to run Cypress tests in non-interactive mode (headless mode).
-   - Non-interactive mode has no user interface and produces output in the terminal or can be integrated with CI/CD tools.
+   - Non-interactive mode has no user interface and produces output in the terminal or can be integrated with CI/CD tools.    
   
 **Commond Cypress Code**
 | Code | Detail |
