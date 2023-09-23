@@ -17,5 +17,7 @@ There are two ways to run cypress in the terminal :
 **Commond Cypress Code**
 | Code | Detail |
 | ------- | ------- |
-| Baris 1 | Baris 1 |
-| Baris 2 | Baris 2 |
+| describe | To group a series of tests |
+| it | To define one single test |
+| expect | To make assertions about certain results during testing |
+| cy.request | To make HTTP requests directly from within the test |
