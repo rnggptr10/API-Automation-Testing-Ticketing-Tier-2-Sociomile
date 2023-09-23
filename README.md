@@ -14,6 +14,7 @@ There are two ways to run cypress in the terminal :
    - Non-interactive mode has no user interface and produces output in the terminal or can be integrated with CI/CD tools.
 
 
+
 **Commond Cypress Code**
 | Code | Detail |
 | ------- | ------- |
