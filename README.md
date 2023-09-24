@@ -5,7 +5,7 @@ API Testing Ticketing Tier 2 testing script on Sociomile with [Cypress](https://
  which uses the JavaScript programming language.
 
 **How to Setup Project**  
-To setup a Cypress project, you can open the following link [Documentation How to Setup Cypress](https://www.canva.com/design/DAFt2DEkNYg/v44IS6S6t2N3BjBwAa0qLg/edit?utm_content=DAFt2DEkNYg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+To setup a Cypress project, you can open the following link [Documentation How to Setup Cypress](https://www.canva.com/design/DAFt2DEkNYg/v44IS6S6t2N3BjBwAa0qLg/edit?utm_content=DAFt2DEkNYg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).  
 
 **How to Run**  
 There are two ways to run cypress in the terminal : 
