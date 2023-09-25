@@ -139,8 +139,30 @@ describe('Tickets', () => {
     })
   })
   
+  describe('Ticket Detail', ()=>{
+    /*
+    1. Return Unauthorized
+    2. Return Correct Data
+    */
+    it('should return unauthorized', ()=>{
+      cy.checkUnauthorized('GET', `https://ticketing.ngetest.com/tickets/${dataTicket.id}`)
+    })
+
+    it('should return correct data', ()=>{
+      cy.request({
+        method:'GET',
+        url:`https://ticketing.ngetest.com/tickets/${dataTicket.id}?group=${dataGroup.id[0]}`,
+        headers: {
+          Authorization: `Bearer ${Cypress.env('token')}`
+        },
+        failOnStatusCode:false,
+      }).then((response) => {
+        // Handle the expect response 
+        expect(response.status).to.equal(200);
+      })
+    })
+  })
   
-  // kendala dari dokumentasi api
   describe('Create New Ticket', ()=>{
     /*
     1. Return Unauthorized
@@ -160,18 +182,14 @@ describe('Tickets', () => {
         body:{
           description: 'descriptions', 
           priority: 'HIGH',
-          project: [
-            {
+          project: {
               id: '90',
               name: 'Customer Care PINGOT'
-            }
-          ],
-          user: [
-            {
+          },
+          user: {
               id: '6472',
               name: 'Tech Yondu Udonta'
-            }
-          ],
+          },
           channel: 'APP',
           type: 'message',
           group: [
@@ -190,30 +208,7 @@ describe('Tickets', () => {
     })
   })
 
-  describe('Ticket Detail', ()=>{
-    /*
-    1. Return Unauthorized
-    2. Return Correct Data
-    */
-    it('should return unauthorized', ()=>{
-      cy.checkUnauthorized('GET', `https://ticketing.ngetest.com/tickets/${dataTicket.id}`)
-    })
-
-    it('should return correct data', ()=>{
-      cy.request({
-        method:'GET',
-        url:`https://ticketing.ngetest.com/tickets/${dataTicket.id}`,
-        headers: {
-          Authorization: `Bearer ${Cypress.env('token')}`
-        },
-        failOnStatusCode:false,
-      }).then((response) => {
-        // Handle the expect response 
-        expect(response.status).to.equal(200);
-      })
-    })
-  })
-
+  // kendala dari dokumentasi api
   describe('Group Assign', ()=>{
     /*
     1. Return Unauthorized
